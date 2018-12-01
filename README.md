@@ -1,1 +1,1 @@
-# Erdman_python
+# Repository for Python training
