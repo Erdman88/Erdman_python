@@ -14,7 +14,7 @@ class TestADDGroup(unittest.TestCase):
         self.wd.implicitly_wait(30)
     
     def test_a_d_d_group(self):
-        wd: WebDriver = self.wd
+        wd = self.wd
         wd.get("http://localhost/addressbook/group.php")
         wd.find_element_by_name("user").click()
         wd.find_element_by_name("user").clear()
