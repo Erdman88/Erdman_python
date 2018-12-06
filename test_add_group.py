@@ -1,12 +1,8 @@
 # -*- coding: utf-8 -*-
+import unittest
+
 from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.firefox.webdriver import WebDriver
-from selenium.webdriver.support.ui import Select
-from selenium.common.exceptions import NoSuchElementException
-from selenium.common.exceptions import NoAlertPresentException
-import unittest, time, re
+
 
 class TestADDGroup(unittest.TestCase):
     def setUp(self):
