@@ -101,7 +101,7 @@ class TestAddContact(unittest.TestCase):
         self.open_home_page(wd)
         self.login(wd, username="admin", password="secret")
         self.open_contacts_page(wd)
-        self.create_contact(wd, Contact(firstname="firstname", middlename="mname", lastname="lname", nickname="nmane",
+        self.create_contact(wd, Contact(firstname="fname", middlename="mname", lastname="lname", nickname="nmane",
                             title="123", company="inet", address="moscow, 23", hometelephone="84822343536",
                             mobiletelephone="89858883843", worktelephone="1234567", faxtelephone="12345678",
                             email="lllname@gmail.com", homepage="https://nname.com", bday="3",
