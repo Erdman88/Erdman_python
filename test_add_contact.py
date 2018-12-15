@@ -103,7 +103,7 @@ class TestAddContact(unittest.TestCase):
         wd.find_element_by_link_text("Logout").click()
     
     def test_add_contact(self):
-        self.open_home_page(wd)
+        self.open_home_page()
         self.login(username="admin", password="secret")
         self.open_contacts_page()
         self.create_contact(Contact(firstname="fname", middlename="mname", lastname="lname", nickname="nmane",
