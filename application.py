@@ -54,5 +54,3 @@ class Application:
     #метод закрытия фикстуры
     def destroy(self):
         self.wd.quit()
-
-
