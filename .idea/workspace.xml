@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8f6341c5-427e-4091-a882-ea6a1113c3ee" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/test_add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_add_group.py" afterDir="false" />
-    </list>
+    <list default="true" id="8f6341c5-427e-4091-a882-ea6a1113c3ee" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +22,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_add_group.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
@@ -33,7 +31,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application.py">
           <provider selected="true" editor-type-id="text-editor">
             <state>
@@ -62,9 +60,9 @@
         <option value="$PROJECT_DIR$/group.py" />
         <option value="$PROJECT_DIR$/contact.py" />
         <option value="$PROJECT_DIR$/application_1.py" />
-        <option value="$PROJECT_DIR$/application.py" />
         <option value="$PROJECT_DIR$/test_add_contact.py" />
         <option value="$PROJECT_DIR$/test_add_group.py" />
+        <option value="$PROJECT_DIR$/application.py" />
       </list>
     </option>
   </component>
@@ -416,19 +414,24 @@
       <option name="project" value="LOCAL" />
       <updated>1544945552132</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="исправлена ошибка">
+      <created>1544945689947</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1544945689947</updated>
+    </task>
+    <task id="LOCAL-00034" summary="исправлена ошибка с Select">
+      <created>1544945872176</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1544945872176</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_for_test_add_group_test_add_empty_group - 2018.12.16 at 01h 15m 03s.xml">
-      <configuration name="pytest for test_add_group.test_add_empty_group" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Nosetests_in_test_add_group_py - 2018.12.16 at 01h 15m 13s.xml">
-      <configuration name="Nosetests in test_add_group.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Nosetests_in_test_add_group_py - 2018.12.16 at 10h 06m 52s.xml">
-      <configuration name="Nosetests in test_add_group.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="Nosetests_in_test_add_group_py - 2018.12.16 at 10h 22m 24s.xml">
       <configuration name="Nosetests in test_add_group.py" configurationId="tests" />
     </history-entry>
@@ -450,17 +453,26 @@
     <history-entry file="Nosetests_in_test_add_group_py - 2018.12.16 at 10h 34m 42s.xml">
       <configuration name="Nosetests in test_add_group.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="pytest_in_test_add_contact_py - 2018.12.16 at 10h 35m 56s.xml">
+      <configuration name="pytest in test_add_contact.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_add_contact_py - 2018.12.16 at 10h 37m 31s.xml">
+      <configuration name="pytest in test_add_contact.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_test_add_group_py - 2018.12.16 at 10h 37m 37s.xml">
+      <configuration name="Nosetests in test_add_group.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="12" y="22" width="1280" height="710" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1810961" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1810961" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4988086" visible="true" weight="0.38996765" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4988086" visible="true" weight="0.38996765" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39967638" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -499,7 +511,8 @@
     <MESSAGE value="доработка для контактов" />
     <MESSAGE value="исправление" />
     <MESSAGE value="исправлена ошибка" />
-    <option name="LAST_COMMIT_MESSAGE" value="исправлена ошибка" />
+    <MESSAGE value="исправлена ошибка с Select" />
+    <option name="LAST_COMMIT_MESSAGE" value="исправлена ошибка с Select" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/unittest/__init__.pyi">
@@ -574,13 +587,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test_add_contact.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -595,6 +601,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
         </state>
       </provider>
     </entry>
