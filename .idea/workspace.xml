@@ -183,9 +183,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python tests.Nosetests in test_add_group.py" />
+        <item itemvalue="Python tests.pytest in test_add_contact.py" />
         <item itemvalue="Python tests.pytest for test_add_group.test_add_empty_group" />
         <item itemvalue="Python tests.pytest for test_add_group.test_add_group" />
-        <item itemvalue="Python tests.pytest in test_add_contact.py" />
       </list>
     </recent_temporary>
   </component>
