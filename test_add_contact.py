@@ -20,6 +20,3 @@ def test_add_contact(app):
                             address2="NY, 45", phone2="123", notes="qwerty"))
     app.logout()
 
-if __name__ == "__main__":
-    unittest.main()
-
