@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8f6341c5-427e-4091-a882-ea6a1113c3ee" name="Default Changelist" comment="Создан класс-менеджер">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="8f6341c5-427e-4091-a882-ea6a1113c3ee" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +22,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/conftest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+            <state relative-caret-position="150">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -64,12 +62,12 @@
         <option value="$PROJECT_DIR$/test/conftest.py" />
         <option value="$PROJECT_DIR$/test/test_add_contact.py" />
         <option value="$PROJECT_DIR$/test/test_del_contact.py" />
-        <option value="$PROJECT_DIR$/conftest.py" />
         <option value="$PROJECT_DIR$/fixture/contact.py" />
         <option value="$PROJECT_DIR$/test/test_add_group.py" />
         <option value="$PROJECT_DIR$/env/lib/python3.7/site-packages/nose/case.py" />
         <option value="$PROJECT_DIR$/Model/contact.py" />
         <option value="$PROJECT_DIR$/fixture/group.py" />
+        <option value="$PROJECT_DIR$/conftest.py" />
       </list>
     </option>
   </component>
@@ -145,7 +143,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Nosetests in test_add_group.py">
+  <component name="RunManager" selected="Python tests.pytest in test_del_group.py">
     <configuration name="Nosetests in test_add_group.py" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
       <module name="Erdman_python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -238,10 +236,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Nosetests in test_add_group.py" />
-        <item itemvalue="Python tests.pytest in test_add_contact.py" />
         <item itemvalue="Python tests.pytest in test_del_group.py" />
+        <item itemvalue="Python tests.Nosetests in test_add_group.py" />
         <item itemvalue="Python tests.pytest in test" />
+        <item itemvalue="Python tests.pytest in test_add_contact.py" />
         <item itemvalue="Python tests.pytest in test_del_contact.py" />
       </list>
     </recent_temporary>
@@ -537,19 +535,17 @@
       <option name="project" value="LOCAL" />
       <updated>1545069461487</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Сделана общая для всех тестов фикстура в файле conftest.py">
+      <created>1545071063945</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1545071063945</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_in_test_del_contact_py - 2018.12.16 at 13h 04m 22s.xml">
-      <configuration name="pytest in test_del_contact.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_test_del_contact_py - 2018.12.16 at 13h 04m 51s.xml">
-      <configuration name="pytest in test_del_contact.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_test_del_contact_py - 2018.12.17 at 20h 44m 52s.xml">
-      <configuration name="pytest in test_del_contact.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="pytest_in_test - 2018.12.17 at 20h 49m 25s.xml">
       <configuration name="pytest in test" configurationId="tests" />
     </history-entry>
@@ -571,6 +567,15 @@
     <history-entry file="Nosetests_in_test_add_group_py - 2018.12.17 at 21h 08m 36s.xml">
       <configuration name="Nosetests in test_add_group.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="pytest_in_test - 2018.12.17 at 21h 26m 32s.xml">
+      <configuration name="pytest in test" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_test_add_group_py - 2018.12.17 at 21h 26m 41s.xml">
+      <configuration name="Nosetests in test_add_group.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_del_group_py - 2018.12.17 at 21h 26m 52s.xml">
+      <configuration name="pytest in test_del_group.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -584,19 +589,18 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="710" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1810961" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1810961" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32739726" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4980143" weight="0.2931507" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4980143" weight="0.29288027" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39967638" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" visible="true" weight="0.11326861" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.11326861" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.32847896" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5019857" side_tool="true" weight="0.29449838" />
       <window_info anchor="bottom" id="Python Console" order="10" />
@@ -605,8 +609,73 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:/Users/elenaerdman/PycharmProjects/Erdman_python/.pytest_cache" />
+                        <option value="dir:/Users/elenaerdman/PycharmProjects/Erdman_python/env" />
+                        <option value="file:$PROJECT_DIR$/conftest.py" />
+                        <option value="dir:/Users/elenaerdman/PycharmProjects/Erdman_python/.idea" />
+                        <option value="dir:/Users/elenaerdman/PycharmProjects/Erdman_python/test" />
+                        <option value="dir:/Users/elenaerdman/PycharmProjects/Erdman_python/fixture" />
+                        <option value="file:$PROJECT_DIR$/.gitignore" />
+                        <option value="dir:/Users/elenaerdman/PycharmProjects/Erdman_python/Model" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Paths">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="dir:/Users/elenaerdman/PycharmProjects/Erdman_python/.pytest_cache" />
+                  <option value="dir:/Users/elenaerdman/PycharmProjects/Erdman_python/env" />
+                  <option value="file:$PROJECT_DIR$/conftest.py" />
+                  <option value="dir:/Users/elenaerdman/PycharmProjects/Erdman_python/.idea" />
+                  <option value="dir:/Users/elenaerdman/PycharmProjects/Erdman_python/test" />
+                  <option value="dir:/Users/elenaerdman/PycharmProjects/Erdman_python/fixture" />
+                  <option value="file:$PROJECT_DIR$/.gitignore" />
+                  <option value="dir:/Users/elenaerdman/PycharmProjects/Erdman_python/Model" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactor parameters group" />
     <MESSAGE value="add metod test_add_empty_group" />
     <MESSAGE value="optimise" />
     <MESSAGE value="добавлен test_add_contact.by" />
@@ -631,7 +700,8 @@
     <MESSAGE value="создан conftest" />
     <MESSAGE value="Созданы классы-помощники и перенесены вспомогательные функции в эти классы" />
     <MESSAGE value="Создан класс-менеджер" />
-    <option name="LAST_COMMIT_MESSAGE" value="Создан класс-менеджер" />
+    <MESSAGE value="Сделана общая для всех тестов фикстура в файле conftest.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Сделана общая для всех тестов фикстура в файле conftest.py" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/unittest/__init__.pyi">
@@ -771,8 +841,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/conftest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
