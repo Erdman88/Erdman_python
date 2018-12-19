@@ -79,11 +79,12 @@ class ContactHelper:
         # select first contact
         wd.find_element_by_name("selected[]").click()
         # submit edit
-        wd.find_element_by_xpath("//table[@id='maintable']/tbody/tr[2]/td").click()
+        wd.find_element_by_xpath(
+            "(.//*[normalize-space(text()) and normalize-space(.)='fname'])[2]/preceding::img[3]").click()
         # edit first name
         wd.find_element_by_name("firstname").click()
         wd.find_element_by_name("firstname").clear()
-        wd.find_element_by_name("firstname").send_keys(contact.firstname)
+        wd.find_element_by_name("firstname").send_keys("123")
         # submit update
         wd.find_element_by_name("update").click()
         self.return_to_home_page()
