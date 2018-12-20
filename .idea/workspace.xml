@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8f6341c5-427e-4091-a882-ea6a1113c3ee" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/fixture/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixture/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/group.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,11 +22,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fixture/contact.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="78" column="36" selection-start-line="78" selection-start-column="36" selection-end-line="78" selection-end-column="36" />
+            <state relative-caret-position="195">
+              <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/fixture/group.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="33" lean-forward="true" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -67,9 +77,9 @@
         <option value="$PROJECT_DIR$/test/test_edit_group.py" />
         <option value="$PROJECT_DIR$/quadratic.py" />
         <option value="$PROJECT_DIR$/test/test_del_contact.py" />
-        <option value="$PROJECT_DIR$/fixture/group.py" />
         <option value="$PROJECT_DIR$/fixture/session.py" />
         <option value="$PROJECT_DIR$/fixture/contact.py" />
+        <option value="$PROJECT_DIR$/fixture/group.py" />
       </list>
     </option>
   </component>
@@ -592,13 +602,17 @@
       <option name="project" value="LOCAL" />
       <updated>1545332668117</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Исправлена ошибка при удалении контакта">
+      <created>1545333064868</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1545333064868</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_in_test_del_contact_py - 2018.12.20 at 21h 54m 25s.xml">
-      <configuration name="pytest in test_del_contact.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="pytest_in_test_del_group_py - 2018.12.20 at 21h 56m 25s.xml">
       <configuration name="pytest in test_del_group.py" configurationId="tests" />
     </history-entry>
@@ -624,6 +638,9 @@
       <configuration name="pytest in test_del_contact.py" configurationId="tests" />
     </history-entry>
     <history-entry file="pytest_in_test - 2018.12.20 at 22h 09m 10s.xml">
+      <configuration name="pytest in test" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test - 2018.12.20 at 22h 10m 34s.xml">
       <configuration name="pytest in test" configurationId="tests" />
     </history-entry>
   </component>
@@ -726,7 +743,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="правка кода" />
     <MESSAGE value="класс Contact" />
     <MESSAGE value="Перенос open page, return to homepage во вспомогательные функции" />
     <MESSAGE value="Перенос  wd = self.wd во вспомогательные функции" />
@@ -751,7 +767,8 @@
     <MESSAGE value="создание test_edit_contact" />
     <MESSAGE value="1. Заменен локатор:&#10;&#10;&quot;(.//*[normalize-space(text()) and normalize-space(.)='fname'])[2]/preceding::img[3]&quot;&#10;&#10;2. Добавлен возврат на главную страницу после подтверждения удаления контакта." />
     <MESSAGE value="выделение выбора первой группы и контакта в отдельный метод" />
-    <option name="LAST_COMMIT_MESSAGE" value="выделение выбора первой группы и контакта в отдельный метод" />
+    <MESSAGE value="Исправлена ошибка при удалении контакта" />
+    <option name="LAST_COMMIT_MESSAGE" value="Исправлена ошибка при удалении контакта" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/unittest/__init__.pyi">
@@ -901,20 +918,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fixture/session.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fixture/group.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="32" column="25" lean-forward="true" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/test_edit_contact.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -946,10 +949,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/fixture/session.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/fixture/contact.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="78" column="36" selection-start-line="78" selection-start-column="36" selection-end-line="78" selection-end-column="36" />
+        <state relative-caret-position="195">
+          <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fixture/group.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="33" lean-forward="true" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
         </state>
       </provider>
     </entry>
