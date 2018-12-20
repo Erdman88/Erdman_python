@@ -13,8 +13,7 @@ class ContactHelper:
         wd = self.app.wd
         self.open_contacts_page()
         # fill contact form
-        wd.find_element_by_name("firstname").click()
-        wd.find_element_by_name("firstname").clear()
+        self.select_first_name()
         wd.find_element_by_name("firstname").send_keys(contact.firstname)
         wd.find_element_by_name("middlename").click()
         wd.find_element_by_name("middlename").clear()
@@ -78,14 +77,18 @@ class ContactHelper:
         wd.switch_to_alert().accept()
         wd.find_element_by_link_text("home").click()
 
+    def select_first_name(self):
+        wd = self.app.wd
+        wd.find_element_by_name("firstname").click()
+        wd.find_element_by_name("firstname").clear()
+
     def edit_first_contact(self):
         wd = self.app.wd
         self.click_selected()
         # submit edit
         wd.find_element_by_xpath("//td[8]/a/img").click()
         # edit first name
-        wd.find_element_by_name("firstname").click()
-        wd.find_element_by_name("firstname").clear()
+        self.select_first_name()
         wd.find_element_by_name("firstname").send_keys("first")
         # submit update
         wd.find_element_by_name("update").click()

@@ -15,8 +15,7 @@ class GroupHelper:
         # unit group creation
         wd.find_element_by_name("new").click()
         # fill group form
-        wd.find_element_by_name("group_name").click()
-        wd.find_element_by_name("group_name").clear()
+        self.select_first_group()
         wd.find_element_by_name("group_name").send_keys(group.name)
         wd.find_element_by_name("group_header").click()
         wd.find_element_by_name("group_header").clear()
@@ -40,6 +39,11 @@ class GroupHelper:
         wd.find_element_by_name("delete").click()
         self.return_to_groups_page()
 
+    def select_first_group(self):
+        wd = self.app.wd
+        wd.find_element_by_name("group_name").click()
+        wd.find_element_by_name("group_name").clear()
+
     def edit_first_group(self):
         wd = self.app.wd
         self.open_groups_page()
@@ -48,8 +52,7 @@ class GroupHelper:
         # submit edit
         wd.find_element_by_name("edit").click()
         # change group name
-        wd.find_element_by_name("group_name").click()
-        wd.find_element_by_name("group_name").clear()
+        self.select_first_group()
         wd.find_element_by_name("group_name").send_keys("first")
         # submit update
         wd.find_element_by_name("update").click()
