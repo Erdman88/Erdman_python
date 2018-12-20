@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8f6341c5-427e-4091-a882-ea6a1113c3ee" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/fixture/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/group.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +25,7 @@
         <entry file="file://$PROJECT_DIR$/fixture/contact.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
-              <caret line="78" column="8" lean-forward="true" selection-start-line="78" selection-start-column="8" selection-end-line="78" selection-end-column="8" />
+              <caret line="78" column="36" selection-start-line="78" selection-start-column="36" selection-end-line="78" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -144,7 +143,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in test_del_contact.py">
+  <component name="RunManager" selected="Python tests.pytest in test">
     <configuration name="pytest in /Users/elenaerdman/PycharmProjects/Erdman_python/.pytest_cache/Test" type="tests" factoryName="py.test" nameIsGenerated="true">
       <module name="Erdman_python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -245,8 +244,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest in test_del_contact.py" />
         <item itemvalue="Python tests.pytest in test" />
+        <item itemvalue="Python tests.pytest in test_del_contact.py" />
         <item itemvalue="Python tests.pytest in test_edit_group.py" />
         <item itemvalue="Python tests.pytest in test_edit_contact.py" />
         <item itemvalue="Python tests.pytest in test_del_group.py" />
@@ -586,16 +585,17 @@
       <option name="project" value="LOCAL" />
       <updated>1545330944025</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="выделение выбора первой группы и контакта в отдельный метод">
+      <created>1545332668117</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1545332668117</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_in_test_add_contact_py - 2018.12.20 at 21h 53m 51s.xml">
-      <configuration name="pytest in test_add_contact.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_test_add_group_py - 2018.12.20 at 21h 54m 03s.xml">
-      <configuration name="pytest in test_add_group.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="pytest_in_test_del_contact_py - 2018.12.20 at 21h 54m 25s.xml">
       <configuration name="pytest in test_del_contact.py" configurationId="tests" />
     </history-entry>
@@ -619,6 +619,12 @@
     </history-entry>
     <history-entry file="pytest_in_test_del_contact_py - 2018.12.20 at 22h 00m 33s.xml">
       <configuration name="pytest in test_del_contact.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_del_contact_py - 2018.12.20 at 22h 08m 29s.xml">
+      <configuration name="pytest in test_del_contact.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test - 2018.12.20 at 22h 09m 10s.xml">
+      <configuration name="pytest in test" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -720,7 +726,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Передача параметров в методы" />
     <MESSAGE value="правка кода" />
     <MESSAGE value="класс Contact" />
     <MESSAGE value="Перенос open page, return to homepage во вспомогательные функции" />
@@ -745,7 +750,8 @@
     <MESSAGE value="создание test_edit_group" />
     <MESSAGE value="создание test_edit_contact" />
     <MESSAGE value="1. Заменен локатор:&#10;&#10;&quot;(.//*[normalize-space(text()) and normalize-space(.)='fname'])[2]/preceding::img[3]&quot;&#10;&#10;2. Добавлен возврат на главную страницу после подтверждения удаления контакта." />
-    <option name="LAST_COMMIT_MESSAGE" value="1. Заменен локатор:&#10;&#10;&quot;(.//*[normalize-space(text()) and normalize-space(.)='fname'])[2]/preceding::img[3]&quot;&#10;&#10;2. Добавлен возврат на главную страницу после подтверждения удаления контакта." />
+    <MESSAGE value="выделение выбора первой группы и контакта в отдельный метод" />
+    <option name="LAST_COMMIT_MESSAGE" value="выделение выбора первой группы и контакта в отдельный метод" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/unittest/__init__.pyi">
@@ -943,7 +949,7 @@
     <entry file="file://$PROJECT_DIR$/fixture/contact.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="78" column="8" lean-forward="true" selection-start-line="78" selection-start-column="8" selection-end-line="78" selection-end-column="8" />
+          <caret line="78" column="36" selection-start-line="78" selection-start-column="36" selection-end-line="78" selection-end-column="36" />
         </state>
       </provider>
     </entry>
