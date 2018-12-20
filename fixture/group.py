@@ -47,7 +47,7 @@ class GroupHelper:
         # change group name
         wd.find_element_by_name("group_name").click()
         wd.find_element_by_name("group_name").clear()
-        wd.find_element_by_name("group_name").send_keys("123")
+        wd.find_element_by_name("group_name").send_keys("first")
         # submit update
         wd.find_element_by_name("update").click()
         self.return_to_groups_page()
