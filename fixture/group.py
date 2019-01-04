@@ -20,7 +20,6 @@ class GroupHelper:
         self.return_to_groups_page()
 
     def fill_group_form(self, group):
-        wd = self.app.wd
         self.change_field_value("group_name", group.name)
         self.change_field_value("group_header", group.header)
         self.change_field_value("group_footer", group.footer)
@@ -32,6 +31,18 @@ class GroupHelper:
             wd.find_element_by_name(field_name).click()
             wd.find_element_by_name(field_name).clear()
 
+    def modify_first_group(self, new_group_data):
+        wd = self.app.wd
+        self.open_groups_page()
+        self.click_selected()
+        # open modification form
+        wd.find_element_by_name("edit").click()
+        # fill group form
+        self.fill_group_form(new_group_data)
+        # submit modification
+        wd.find_element_by_name("update").click()
+        self.return_to_groups_page()
+
     def click_selected(self):
         wd = self.app.wd
         wd.find_element_by_name("selected[]").click()
@@ -40,7 +51,7 @@ class GroupHelper:
         wd = self.app.wd
         self.open_groups_page()
         self.click_selected()
-        #submit deletion
+        # submit deletion
         wd.find_element_by_name("delete").click()
         self.return_to_groups_page()
 
@@ -61,19 +72,6 @@ class GroupHelper:
         # submit update
         wd.find_element_by_name("update").click()
         self.return_to_groups_page()
-
-    def modify_first_group(self, new_group_data):
-        wd = self.app.wd
-        self.open_groups_page()
-        self.click_selected()
-        # open modification form
-        wd.find_element_by_name("edit").click()
-        # fill group form
-        self.fill_group_form(new_group_data)
-        # submit modification
-        wd.find_element_by_name("update").click()
-        self.return_to_groups_page()
-
 
     def return_to_groups_page(self):
         wd = self.app.wd
