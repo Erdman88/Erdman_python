@@ -7,12 +7,13 @@ class ContactHelper:
 
     def open_contacts_page(self):
         wd = self.app.wd
-        if not (wd.current_url.endswith("/edit.php")):
-            wd.find_element_by_link_text("add new").click()
+        if not (wd.current_url.endswith("/index.php")):
+            wd.find_element_by_link_text("home").click()
 
     def create(self, contact):
         wd = self.app.wd
-        self.open_contacts_page()
+        #self.open_contacts_page()
+        wd.find_element_by_link_text("add new").click()
         # fill contact form
         self.fill_contact_form(contact)
         # submit contact creation
@@ -44,6 +45,7 @@ class ContactHelper:
 
     def modify_first_contact(self, new_contact_data):
         wd = self.app.wd
+        self.open_contacts_page()
         self.click_selected()
         # fill group form
         self.fill_contact_form(new_contact_data)
@@ -57,6 +59,7 @@ class ContactHelper:
 
     def delete_first_contact(self):
         wd = self.app.wd
+        self.open_contacts_page()
         self.click_selected()
         # submit deletion
         wd.find_element_by_xpath("//input[@value='Delete']").click()
@@ -70,6 +73,7 @@ class ContactHelper:
 
     def edit_first_contact(self):
         wd = self.app.wd
+        self.open_contacts_page()
         self.click_selected()
         # submit edit
         wd.find_element_by_xpath("//td[8]/a/img").click()
