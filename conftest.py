@@ -5,7 +5,7 @@ from fixture.application import Application
 fixture = None
 
 @pytest.fixture
-def app(request):
+def app():
     global fixture
     if fixture is None:
         fixture = Application()
@@ -16,7 +16,7 @@ def app(request):
             fixture.session.login(username="admin", password="secret")
     return fixture
 
-@pytest.fixture(scope="session", autouse= True)
+@pytest.fixture(scope="session", autouse=True)
 def stope(request):
     def fin():
         fixture.session.logout()

@@ -7,7 +7,8 @@ class ContactHelper:
 
     def open_contacts_page(self):
         wd = self.app.wd
-        wd.find_element_by_link_text("add new").click()
+        if not (wd.current_url.endswith("/edit.php")):
+            wd.find_element_by_link_text("add new").click()
 
     def create(self, contact):
         wd = self.app.wd
@@ -43,7 +44,6 @@ class ContactHelper:
 
     def modify_first_contact(self, new_contact_data):
         wd = self.app.wd
-        self.open_contacts_page()
         self.click_selected()
         # fill group form
         self.fill_contact_form(new_contact_data)
