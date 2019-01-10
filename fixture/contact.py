@@ -1,4 +1,4 @@
-
+from model.contact import Contact
 
 class ContactHelper:
 
@@ -7,12 +7,12 @@ class ContactHelper:
 
     def open_contacts_page(self):
         wd = self.app.wd
-        if not (wd.current_url.endswith("/index.php")):
+        if not (wd.current_url.endswith("/index.php") and len(wd.find_elements_by_name("new")) > 0):
             wd.find_element_by_link_text("home").click()
 
     def create(self, contact):
         wd = self.app.wd
-        #self.open_contacts_page()
+        self.open_contacts_page()
         wd.find_element_by_link_text("add new").click()
         # fill contact form
         self.fill_contact_form(contact)
@@ -92,3 +92,13 @@ class ContactHelper:
         wd = self.app.wd
         self.open_contacts_page()
         return len(wd.find_elements_by_name("selected[]"))
+
+    def get_contact_list(self):
+        wd = self.app.wd
+        self.open_contacts_page()
+        contacts=[]
+        for element in wd.find_elements_by_css_selector("td.center"):
+            text = element.text
+            id = element.find_element_by_name("selected[]").get_attribute("value")
+            contacts.append(Contact(firstname=text, middlename=text, id=id))
+        return contacts
