@@ -42,7 +42,6 @@ class ContactHelper:
         if text is not None:
             wd.find_element_by_name(field_name).send_keys(text)
             wd.find_element_by_name(field_name).click()
-            wd.find_element_by_name(field_name).clear()
 
     def modify_first_contact(self, new_contact_data):
         wd = self.app.wd

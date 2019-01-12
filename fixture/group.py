@@ -31,7 +31,6 @@ class GroupHelper:
         if text is not None:
             wd.find_element_by_name(field_name).send_keys(text)
             wd.find_element_by_name(field_name).click()
-            #wd.find_element_by_name(field_name).clear()
 
     def modify_first_group(self, new_group_data):
         wd = self.app.wd
