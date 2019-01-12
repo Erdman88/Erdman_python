@@ -10,5 +10,3 @@ def test_add_contact(app):
                                email="lllname@gmail.com", homepage="https://nname.com", ayear="1991", phone2="123"))
     new_contacts = app.contact.get_contact_list()
     assert len(old_contacts) + 1 == len(new_contacts)
-
-
