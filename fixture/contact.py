@@ -43,10 +43,13 @@ class ContactHelper:
             wd.find_element_by_name(field_name).send_keys(text)
             wd.find_element_by_name(field_name).click()
 
-    def modify_first_contact(self, new_contact_data):
+    def modify_first_contact(self):
+        self.modify_contact_by_index(0)
+
+    def modify_contact_by_index(self, index, new_contact_data):
         wd = self.app.wd
         self.open_contacts_page()
-        self.click_selected()
+        self.select_contact_by_index(index)
         # fill group form
         self.fill_contact_form(new_contact_data)
         # submit modification
