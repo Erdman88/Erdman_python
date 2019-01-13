@@ -32,10 +32,13 @@ class GroupHelper:
             wd.find_element_by_name(field_name).send_keys(text)
             wd.find_element_by_name(field_name).click()
 
-    def modify_first_group(self, new_group_data):
+    def modify_first_group(self):
+        self.modify_group_by_index(0)
+
+    def modify_group_by_index(self, index, new_group_data):
         wd = self.app.wd
         self.open_groups_page()
-        self.click_selected()
+        self.select_group_by_index(index)
         # open modification form
         wd.find_element_by_name("edit").click()
         # fill group form
