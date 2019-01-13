@@ -111,7 +111,7 @@ class ContactHelper:
         if self.contact_cache is None:
             wd = self.app.wd
             self.open_contacts_page()
-            self.contact_cache=[]
+            self.contact_cache = []
             for element in wd.find_elements_by_css_selector("td.center"):
                 text = element.text
                 id = element.find_element_by_name("selected[]").get_attribute("value")
