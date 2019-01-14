@@ -113,7 +113,7 @@ class ContactHelper:
             self.open_contacts_page()
             self.contact_cache = []
             for element in wd.find_elements_by_name("entry"):
+                id = element.find_element_by_css_selector("td.center")
                 text = element.text
-                id = element.find_elements_by_css_selector("td.center")
                 self.contact_cache.append(Contact(firstname=text, middlename=text, id=id))
         return list(self.contact_cache)
