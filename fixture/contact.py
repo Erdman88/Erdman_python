@@ -87,9 +87,9 @@ class ContactHelper:
     def edit_contact_by_index(self, index):
         wd = self.app.wd
         self.open_contacts_page()
-        self.select_contact_by_index(index)
+        #self.select_contact_by_index(index)
         # submit edit
-        wd.find_element_by_xpath("//td[8]/a/img").click()
+        wd.find_elements_by_xpath("//td[8]/a/img")[index].click()
         # edit first name
         self.select_first_name()
         wd.find_element_by_name("firstname").send_keys("first")
@@ -114,8 +114,11 @@ class ContactHelper:
             wd = self.app.wd
             self.open_contacts_page()
             self.contact_cache = []
-            for element in wd.find_elements_by_name("entry"):
-                id = element.find_elements_by_css_selector("td.center")
-                text = element.text
-                self.contact_cache.append(Contact(firstname=text, id=id))
-        return list(self.contact_cache)
+            rows = [row for row in wd.find_element_by_xpath("//table[@id='maintable']").
+                find_elements_by_xpath("//tr[@name='entry']")]
+            for row in rows:
+                self.contact_cache.append(Contact(firstname=row.find_elements_by_xpath("td")[2].text,
+                                                  lastname=row.find_elements_by_xpath("td")[1].text,
+                                                  id=row.find_elements_by_xpath("td")[0].
+                                                  find_element_by_xpath("input").get_attribute("id")))
+        return self.contact_cache
