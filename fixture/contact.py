@@ -84,15 +84,16 @@ class ContactHelper:
     def edit_first_contact(self):
         self.edit_contact_by_index(0)
 
-    def edit_contact_by_index(self, index):
+    def edit_contact_by_index(self, index, new_contact_data):
         wd = self.app.wd
         self.open_contacts_page()
         #self.select_contact_by_index(index)
         # submit edit
         wd.find_elements_by_xpath("//td[8]/a/img")[index].click()
         # edit first name
-        self.select_first_name()
-        wd.find_element_by_name("firstname").send_keys("first")
+        #self.select_first_name()
+        #wd.find_element_by_name("firstname").send_keys("first")
+        self.fill_contact_form(new_contact_data)
         # submit update
         wd.find_element_by_name("update").click()
         self.return_to_home_page()

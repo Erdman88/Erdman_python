@@ -72,15 +72,16 @@ class GroupHelper:
     def edit_first_group(self):
         self.edit_group_by_index(0)
 
-    def edit_group_by_index(self, index):
+    def edit_group_by_index(self, index, new_group_data):
         wd = self.app.wd
         self.open_groups_page()
         self.select_group_by_index(index)
         # submit edit
         wd.find_element_by_name("edit").click()
         # change group name
-        self.select_first_group()
-        wd.find_element_by_name("group_name").send_keys("first")
+        #self.select_first_group()
+        #wd.find_element_by_name("group_name").send_keys("first")
+        self.fill_group_form(new_group_data)
         # submit update
         wd.find_element_by_name("update").click()
         self.return_to_groups_page()

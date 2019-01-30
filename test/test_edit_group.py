@@ -6,9 +6,9 @@ def test_edit_some_group(app):
         app.group.create(Group(name="test"))
     old_groups = app.group.get_group_list()
     index = randrange(len(old_groups))
-    group = Group(name="New group")
+    group = Group(name="qwerty1", header="qwerty1", footer="qwerty1")
     group.id = old_groups[index].id
-    app.group.edit_group_by_index(index)
+    app.group.edit_group_by_index(index, group)
     new_groups = app.group.get_group_list()
     assert len(old_groups) == len(new_groups)
     old_groups[index] = group
