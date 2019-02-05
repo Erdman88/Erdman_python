@@ -1,19 +1,7 @@
 # -*- coding: utf-8 -*-
 from model.group import Group
 import pytest
-import random
-import string
-
-#гинератор случайных строк
-def random_string(prefix, maxlen):
-    symbols = string.ascii_letters + string.digits + string.punctuation + " "*10
-    #многократно случайно выбираем символ из заданной строки
-    return prefix + "".join([random.choice(symbols) for i in range(random.randrange(maxlen))])
-
-testdata = [Group(name="", header="", footer="")] + [
-        Group(name=random_string("name", 10), header=random_string("header", 15), footer=random_string("footer", 12))
-    for i in range(3)
-    ]
+from data.add_group import constant as testdata
 
 @pytest.mark.parametrize("group", testdata, ids=[repr(x) for x in testdata])
 def test_add_group(app, group):
