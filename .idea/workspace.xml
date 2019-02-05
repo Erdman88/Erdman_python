@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8f6341c5-427e-4091-a882-ea6a1113c3ee" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/add_group.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,20 +25,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data/add_contact.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+            <state relative-caret-position="30">
+              <caret line="2" column="13" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
               <folding>
-                <element signature="e#0#13#0" expanded="true" />
+                <element signature="e#0#4#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/test_add_contact.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -45,8 +37,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/add_group.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="29" selection-start-column="29" selection-end-column="29" />
+            <state relative-caret-position="105">
+              <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#4#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/model/group.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="11" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -325,20 +329,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1543683315153</updated>
-    </task>
-    <task id="LOCAL-00028" summary="доработка для контактов">
-      <created>1544911476045</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1544911476045</updated>
-    </task>
-    <task id="LOCAL-00029" summary="доработка для контактов">
-      <created>1544944025772</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1544944025772</updated>
     </task>
     <task id="LOCAL-00030" summary="доработка для контактов">
       <created>1544944896139</created>
@@ -669,7 +659,21 @@
       <option name="project" value="LOCAL" />
       <updated>1549390181961</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="add data package for groups and contacts">
+      <created>1549392435459</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1549392435460</updated>
+    </task>
+    <task id="LOCAL-00078" summary="fix error in data file for contacts">
+      <created>1549392850581</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1549392850581</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -804,8 +808,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="1. Валидация фикстуры перед каждым тестом&#10;2. вспомогательный класс, реализующий операции login и logout (SessionHelper)" />
-    <MESSAGE value="выполнение предусловий в тестах для удаления и модификации для групп и контактов" />
     <MESSAGE value="оптимизированы переходы между страницами" />
     <MESSAGE value="1. Проверка предусловий реализовано для модификаций&#10;&#10;2. Доработан метод count -  сделан переход на страницу контактов" />
     <MESSAGE value="1. Исправлена ошибка в fixture&#10;2. Исправлена ошибка при запуске тестов&#10;3. Добавлена проверка в виде сравнения списков для групп" />
@@ -829,7 +831,9 @@
     <MESSAGE value="параметризация контактов" />
     <MESSAGE value="Реализовано опции командной строки, позволяющие указывать тип браузера и адрес тестируемого приложения" />
     <MESSAGE value="add file target.json" />
-    <option name="LAST_COMMIT_MESSAGE" value="add file target.json" />
+    <MESSAGE value="add data package for groups and contacts" />
+    <MESSAGE value="fix error in data file for contacts" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix error in data file for contacts" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
@@ -1159,20 +1163,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_add_group.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/group.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="28" lean-forward="true" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fixture/group.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1187,10 +1177,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/model/group.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="11" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/data/add_group.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="29" selection-start-column="29" selection-end-column="29" />
+        <state relative-caret-position="105">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#4#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_add_group.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1203,10 +1210,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data/add_contact.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+        <state relative-caret-position="30">
+          <caret line="2" column="13" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#0#4#0" expanded="true" />
           </folding>
         </state>
       </provider>
