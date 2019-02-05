@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8f6341c5-427e-4091-a882-ea6a1113c3ee" name="Default Changelist" comment="параметризация контактов">
+    <list default="true" id="8f6341c5-427e-4091-a882-ea6a1113c3ee" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/application.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_info_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_info_contact.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,8 +39,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/test_add_group.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+            <state relative-caret-position="135">
+              <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
               <folding>
                 <element signature="e#24#53#0" expanded="true" />
               </folding>
@@ -54,11 +51,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/conftest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="60">
+              <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/target.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -126,6 +129,7 @@
         <option value="$PROJECT_DIR$/test/test_info_contact.py" />
         <option value="$PROJECT_DIR$/fixture/application.py" />
         <option value="$PROJECT_DIR$/conftest.py" />
+        <option value="$PROJECT_DIR$/target.json" />
       </list>
     </option>
   </component>
@@ -252,12 +256,12 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;--browser\u003dchrome&quot;" />
+      <option name="_new_additionalArguments" value="&quot;--browser\u003dfirefox&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_add_group.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
@@ -320,13 +324,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1543683315153</updated>
-    </task>
-    <task id="LOCAL-00026" summary="правка application">
-      <created>1544909783155</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1544909783155</updated>
     </task>
     <task id="LOCAL-00027" summary="правка application">
       <created>1544911132654</created>
@@ -664,22 +661,17 @@
       <option name="project" value="LOCAL" />
       <updated>1549299544628</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="Реализовано опции командной строки, позволяющие указывать тип браузера и адрес тестируемого приложения">
+      <created>1549308350785</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1549308350785</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_for_test_info_contact_test_lastname_on_view_page - 2019.02.04 at 19h 55m 05s.xml">
-      <configuration name="pytest for test_info_contact.test_lastname_on_view_page" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_info_contact_test_lastname_on_view_page - 2019.02.04 at 19h 55m 33s.xml">
-      <configuration name="pytest for test_info_contact.test_lastname_on_view_page" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_info_contact_test_lastname_on_view_page - 2019.02.04 at 19h 55m 58s.xml">
-      <configuration name="pytest for test_info_contact.test_lastname_on_view_page" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_info_contact_test_lastname_on_view_page - 2019.02.04 at 20h 22m 05s.xml">
-      <configuration name="pytest for test_info_contact.test_lastname_on_view_page" configurationId="tests" />
-    </history-entry>
     <history-entry file="pytest_for_test_info_contact_test_lastname_on_view_page - 2019.02.04 at 20h 22m 23s.xml">
       <configuration name="pytest for test_info_contact.test_lastname_on_view_page" configurationId="tests" />
     </history-entry>
@@ -698,6 +690,18 @@
     <history-entry file="pytest_in_test_add_group_py - 2019.02.04 at 22h 04m 55s.xml">
       <configuration name="pytest in test_add_group.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="pytest_in_test_add_group_py - 2019.02.04 at 22h 32m 38s.xml">
+      <configuration name="pytest in test_add_group.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_add_group_py - 2019.02.04 at 22h 35m 06s.xml">
+      <configuration name="pytest in test_add_group.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_add_group_py - 2019.02.04 at 22h 36m 06s.xml">
+      <configuration name="pytest in test_add_group.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_add_group_py - 2019.02.04 at 22h 36m 40s.xml">
+      <configuration name="pytest in test_add_group.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -711,20 +715,21 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="710" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1810961" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1810961" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32686085" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49563146" visible="true" weight="0.42880258" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49642575" weight="0.42880258" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49960285" weight="0.4433657" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.197411" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.24757281" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32847896" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50039715" side_tool="true" weight="0.4433657" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50357425" side_tool="true" weight="0.42880258" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32847896" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -798,7 +803,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="выделение выбора первой группы и контакта" />
     <MESSAGE value="Оптимизация ввода данных в формы для группы" />
     <MESSAGE value="1. Валидация фикстуры перед каждым тестом&#10;2. вспомогательный класс, реализующий операции login и logout (SessionHelper)" />
     <MESSAGE value="выполнение предусловий в тестах для удаления и модификации для групп и контактов" />
@@ -823,7 +827,8 @@
     <MESSAGE value="Реализовано:&#10;проверки для всех полей контакта на главной странице" />
     <MESSAGE value="параметризация групп" />
     <MESSAGE value="параметризация контактов" />
-    <option name="LAST_COMMIT_MESSAGE" value="параметризация контактов" />
+    <MESSAGE value="Реализовано опции командной строки, позволяющие указывать тип браузера и адрес тестируемого приложения" />
+    <option name="LAST_COMMIT_MESSAGE" value="Реализовано опции командной строки, позволяющие указывать тип браузера и адрес тестируемого приложения" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
@@ -1162,8 +1167,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/test_add_group.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+        <state relative-caret-position="135">
+          <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
           <folding>
             <element signature="e#24#53#0" expanded="true" />
           </folding>
@@ -1180,13 +1185,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/target.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/conftest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="60">
+          <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
         </state>
       </provider>
     </entry>
