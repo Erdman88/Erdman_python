@@ -2,7 +2,7 @@ import pytest
 import json
 import os.path
 import importlib
-import jsompickle
+import jsonpickle
 from fixture.application import Application
 from fixture.db import DbFixture
 
