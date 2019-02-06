@@ -5,6 +5,7 @@ import importlib
 import jsonpickle
 from fixture.application import Application
 from fixture.db import DbFixture
+import importlib
 
 
 fixture = None
@@ -44,3 +45,12 @@ def stop(request):
 def pytest_addoption(parser):
     parser.addoption("--browser", action="store", default = "firefox")
     parser.addoption("--target", action="store", default="target.json")
+
+def pytest_generate_tests(metafunc):
+    for fixture in metafunc.fixturenames:
+        if fixture.startswith("data_"):
+            testdata = load_form_module(fixture[5:])
+            metafunc.parametrize(fixture, testdata, ids=[str(x) for x in testdata])
+
+def load_form_module(module):
+    return importlib.import_module("data.%s" % module).testdata
