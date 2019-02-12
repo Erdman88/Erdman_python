@@ -10,24 +10,34 @@ import importlib
 fixture = None
 target = None
 
+def load_config(file):
+    if target is None:
+        config_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), file)
+        with open(config_file) as f:
+            target = json.load(f)
+    return target
+
+
 @pytest.fixture
 def app(request):
     global fixture
     global target
-    if target is None:
-        config_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), request.config.getoption("--target"))
-        with open(config_file) as f:
-            target = json.load(f)
+    web_config = load_config(request.config.getoption("--target"))["web"]
+    #if target is None:
+       # config_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), request.config.getoption("--target"))
+       # with open(config_file) as f:
+            #target = json.load(f)
     if fixture is None or not fixture.is_valid():
         browser = request.config.getoption("--browser")
         #base_url = request.config.getoption("--baseUrl")
-        fixture = Application(browser=browser, base_url=target["baseUrl"])
-    fixture.session.ensure_login(username=target["username"], password=target["password"])
+        fixture = Application(browser=browser, base_url=web_config["baseUrl"])
+    fixture.session.ensure_login(username=web_config["username"], password=web_config["password"])
     return fixture
 
 @pytest.fixture(scope="session")
 def db(request):
-    dbfixture = DbFixture()
+    db_config = load_config(request.config.getoption("--target"))["db"]
+    dbfixture = DbFixture(host=db_config["host"], name=db_config["db"], user=db_config["user"], password=db_config["password"])
     def fin():
         dbfixture.destroy()
     #регистрируем
