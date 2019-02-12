@@ -7,7 +7,8 @@ class DbFixture:
         self.name = name
         self.user = user
         self.password = password
-        self.connection = mysql.connector.connect(host=host, database=name, user=user, password=password)
+        self.connection = mysql.connector.connect(host=host, database=name, user=user, password=password, autocommit=True)
+        #autocommit=True означает что после каждого коммита кэш сбрасывается
 
     def get_group_list(self):
         list = []
