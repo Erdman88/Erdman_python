@@ -30,6 +30,7 @@ def db(request):
     dbfixture = DbFixture()
     def fin():
         dbfixture.destroy()
+    #регистрируем
     request.addfinalizer(fin)
     return dbfixture
 
