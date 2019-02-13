@@ -13,31 +13,33 @@ class ORMFixture:
         name = Optional(str, column='group_name')
         header = Optional(str, column='group_header')
         footer = Optional(str, column='group_footer')
+        # читается инфо обо всех контактах, которые входят в эту группу
         contacts = Set(lambda: ORMFixture.ORMContact, table="address_in_groups", column="id", reverse="groups", lazy=True)
 
     class ORMContact(db.Entity):
         _table_ = 'addressbook'
+        #для контакта заполняются свойтва:
         id = PrimaryKey(int, column='id')
         firstname = Optional(str, column='firstname')
         lastname = Optional(str, column='lastname')
         deprecated = Optional(datetime, column='deprecated')
-        groups = Set(lambda: ORMFixture.ORMGroup, table="address_in_groups", column="group_id")
+        groups = Set(lambda: ORMFixture.ORMGroup, table="address_in_groups", column="group_id", reverse="contacts", lazy=True)
 
     def __init__(self, host, name, user, password):
         #в conv передается набор конвертеров-преобразователей для отдельных типов данных
-        self.db.bind('mysql', host=host, database=name, user=user, password=password, conv=decoders, reverse="groups", lazy=True)
+        self.db.bind('mysql', host=host, database=name, user=user, password=password, conv=decoders)
         #сопоставление свойств, описанных в классах с таблицами и полями этих таблиц
-        self.db.ganerate_mapping()
+        self.db.generate_mapping()
         sql_debug(True)
 
     def convert_groups_to_model(self, groups):
         def convert(group):
-            return Group(id=group.id, name=group.name, header=group.header, footer=group.footer)
+            return Group(id=str(group.id), name=group.name, header=group.header, footer=group.footer)
         return list(map(convert, groups))
 
     def convert_contacts_to_model(self, contacts):
         def convert(contact):
-            return Contact(id=contact.id, firstname=contact.firstname, lastname=contact.lastname)
+            return Contact(id=str(contact.id), firstname=contact.firstname, lastname=contact.lastname)
         return list(map(convert, contacts))
 
     @db_session
