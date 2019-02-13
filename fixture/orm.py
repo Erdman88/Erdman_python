@@ -23,7 +23,7 @@ class ORMFixture:
         deprecated = Optional(datetime, column='deprecated')
         groups = Set(lambda: ORMFixture.ORMGroup, table="address_in_groups", column="group_id")
 
-    def __init__(self, hast, name, user, password):
+    def __init__(self, host, name, user, password):
         #в conv передается набор конвертеров-преобразователей для отдельных типов данных
         self.db.bind('mysql', host=host, database=name, user=user, password=password, conv=decoders, reverse="groups", lazy=True)
         #сопоставление свойств, описанных в классах с таблицами и полями этих таблиц
